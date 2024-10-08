@@ -26,6 +26,7 @@ import HookUseReef from "./paginas/HookUseReef.jsx";
 import Formularios from "./paginas/Formularios.jsx";
 import FormulariosSimple from "./paginas/FormulariosSimple.jsx";
 import FormularioUserActionData, {action as procesarFormularioActionDate} from "./paginas/FormularioUserActionData.jsx";
+import FormularioPractica from "./paginas/FormularioPractica.jsx";
 
 const router = createBrowserRouter([
   {
@@ -103,6 +104,11 @@ const router = createBrowserRouter([
         element: <FormularioUserActionData/>,
         action : procesarFormularioActionDate
       },
+      {
+        path : "/formulario-practica",
+        element: <FormularioPractica/>
+      },
+      
       {
         path: "/rutas/query-string",
         element: <RutasQuery/>,

@@ -181,5 +181,109 @@ const categorias = [
     }
   ];
   
-  export { categorias, productos, paises, atributos };
+  const pais = [
+    {
+      "id": 1,
+      "nombre": "Portugal"
+    },
+    {
+      "id": 2,
+      "nombre": "España"
+    },
+    {
+      "id": 3,
+      "nombre": "Francia"
+    },
+    {
+      "id": 4,
+      "nombre": "Italia"
+    },
+    {
+      "id": 5,
+      "nombre": "Reino Unido"
+    },
+    {
+      "id": 6,
+      "nombre": "Brasil"
+    },
+    {
+      "id": 7,
+      "nombre": "Polonia"
+    },
+    {
+      "id": 8,
+      "nombre": "Alemania"
+    }
+  ];
+  
+  const ciudades = [
+    {
+      "id": 1,
+      "nombre": "Lisboa",
+      "pais_id": 1
+    },
+    {
+      "id": 2,
+      "nombre": "Madrid",
+      "pais_id": 2
+    },
+    {
+      "id": 3,
+      "nombre": "Barcelona",
+      "pais_id": 2
+    },
+    {
+      "id": 4,
+      "nombre": "Paris",
+      "pais_id": 3
+    },
+    {
+      "id": 5,
+      "nombre": "Lyon",
+      "pais_id": 3
+    },
+    {
+      "id": 6,
+      "nombre": "Roma",
+      "pais_id": 4
+    },
+    {
+      "id": 7,
+      "nombre": "Turín",
+      "pais_id": 4
+    },
+    {
+      "id": 8,
+      "nombre": "Londres",
+      "pais_id": 5
+    },
+    {
+      "id": 9,
+      "nombre": "Manchester",
+      "pais_id": 5
+    },
+    {
+      "id": 10,
+      "nombre": "Rio de Janeiro",
+      "pais_id": 6
+    },
+    {
+      "id": 11,
+      "nombre": "Varsovia",
+      "pais_id": 7
+    },
+    {
+      "id": 12,
+      "nombre": "Múnich",
+      "pais_id": 8
+    },
+    {
+      "id": 13,
+      "nombre": "Berlín",
+      "pais_id": 8
+    }
+  ];
+  
+
+  export { categorias, productos, paises, atributos, pais, ciudades };
   
