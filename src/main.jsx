@@ -27,6 +27,8 @@ import Formularios from "./paginas/Formularios.jsx";
 import FormulariosSimple from "./paginas/FormulariosSimple.jsx";
 import FormularioUserActionData, {action as procesarFormularioActionDate} from "./paginas/FormularioUserActionData.jsx";
 import FormularioPractica from "./paginas/FormularioPractica.jsx";
+import FormulariosFormMix from "./paginas/FormulariosFormMix.jsx";
+import FormulariosReactHookForm from "./paginas/FormulariosReactHookForm.jsx";
 
 const router = createBrowserRouter([
   {
@@ -107,8 +109,16 @@ const router = createBrowserRouter([
       {
         path : "/formulario-practica",
         element: <FormularioPractica/>
+      },  
+       
+      {
+        path : "/formulario-formik",
+        element: <FormulariosFormMix/>
       },
-      
+      {
+        path : "/formulario-react-hook-form",
+        element: <FormulariosReactHookForm/>
+      },
       {
         path: "/rutas/query-string",
         element: <RutasQuery/>,
