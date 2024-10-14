@@ -1,13 +1,13 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import 'bootstrap/dist/css/bootstrap.min.css'
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
-import "/public/css/blog.css"
+import "/public/css/blog.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom"; // Error corregido
 import Home from "./paginas/home.jsx";
 import Acerca from "./paginas/Acerca";
 import Frontends from "./componentes/Frontends.jsx";
-import Rutas from "./paginas/Rutas"
+import Rutas from "./paginas/Rutas";
 import RutasPath from "./paginas/RutasPath.jsx";
 import RutasQuery from "./paginas/RutasQuery.jsx";
 import ErrorPersonalizado from "./paginas/ErrorPersonalizado.jsx";
@@ -19,16 +19,22 @@ import HookEventoOnChange from "./paginas/HookEventoOnChange.jsx";
 import HookVarios from "./paginas/HookVarios.jsx";
 import HookUseEffect from "./paginas/HookUseEffect.jsx";
 import CustomHook from "./paginas/CustomHook.jsx";
-import HookLoaderDate, {loader as paisesLoader} from "./paginas/HookLoaderDate.jsx";
+import HookLoaderDate, {
+  loader as paisesLoader,
+} from "./paginas/HookLoaderDate.jsx";
 import HookUseNavigate from "./paginas/HookUseNavigate.jsx";
 import HookUseLocation from "./paginas/HookUseLocation.jsx";
 import HookUseReef from "./paginas/HookUseReef.jsx";
 import Formularios from "./paginas/Formularios.jsx";
 import FormulariosSimple from "./paginas/FormulariosSimple.jsx";
-import FormularioUserActionData, {action as procesarFormularioActionDate} from "./paginas/FormularioUserActionData.jsx";
+import FormularioUserActionData, {
+  action as procesarFormularioActionDate,
+} from "./paginas/FormularioUserActionData.jsx";
 import FormularioPractica from "./paginas/FormularioPractica.jsx";
 import FormulariosFormMix from "./paginas/FormulariosFormMix.jsx";
 import FormulariosReactHookForm from "./paginas/FormulariosReactHookForm.jsx";
+import FormulariosFinalForm from "./paginas/FormulariosFinalForm.jsx";
+import Utiles from "./paginas/Utiles.jsx";
 
 const router = createBrowserRouter([
   {
@@ -39,99 +45,106 @@ const router = createBrowserRouter([
         index: true,
         element: <Home />,
       },
+      
       {
         path: "/acerca",
-        element: <Acerca/>,
+        element: <Acerca />,
       },
 
       {
         path: "/rutas",
-        element: <Rutas/>,
+        element: <Rutas />,
+      },
+      {
+        path: "/utilidades",
+        element: <Utiles />,
       },
       {
         path: "/hooks",
-        element: <Hooks/>,
+        element: <Hooks />,
       },
       {
         path: "/hooks/eventos-click",
-        element: <HookEventoClick/>
+        element: <HookEventoClick />,
       },
       {
         path: "/hooks/useState",
-        element: <HooksUseState/>
+        element: <HooksUseState />,
       },
       {
         path: "/hooks/OnChange",
-        element: <HookEventoOnChange/>
+        element: <HookEventoOnChange />,
       },
       {
         path: "/hooks/EventosVarios",
-        element: <HookVarios/>
+        element: <HookVarios />,
       },
       {
         path: "/hooks/use-effect",
-        element: <HookUseEffect/>
+        element: <HookUseEffect />,
       },
       {
         path: "/hooks/Custom-Hooks",
-        element: <CustomHook/>
+        element: <CustomHook />,
       },
       {
         path: "/hooks/Loader-Hooks",
-        element: <HookLoaderDate/>,
-        loader : paisesLoader
+        element: <HookLoaderDate />,
+        loader: paisesLoader,
       },
       {
-        path : "/hooks/Navigate-Hooks",
-        element: <HookUseNavigate/>
+        path: "/hooks/Navigate-Hooks",
+        element: <HookUseNavigate />,
       },
       {
-        path : "/hooks/UseLocation-Hooks",
-        element: <HookUseLocation/>
+        path: "/hooks/UseLocation-Hooks",
+        element: <HookUseLocation />,
       },
       {
-        path : "/hooks/UseReef-Hooks",
-        element: <HookUseReef/>
+        path: "/hooks/UseReef-Hooks",
+        element: <HookUseReef />,
       },
       {
-        path : "/formularios",
-        element: <Formularios/>
+        path: "/formularios",
+        element: <Formularios />,
       },
       {
-        path : "/formulario-simple",
-        element: <FormulariosSimple/>
+        path: "/formulario-simple",
+        element: <FormulariosSimple />,
       },
       {
-        path : "/formulario-user-action-data",
-        element: <FormularioUserActionData/>,
-        action : procesarFormularioActionDate
+        path: "/formulario-user-action-data",
+        element: <FormularioUserActionData />,
+        action: procesarFormularioActionDate,
       },
       {
-        path : "/formulario-practica",
-        element: <FormularioPractica/>
-      },  
-       
+        path: "/formulario-practica",
+        element: <FormularioPractica />,
+      },
+
       {
-        path : "/formulario-formik",
-        element: <FormulariosFormMix/>
+        path: "/formulario-formik",
+        element: <FormulariosFormMix />,
       },
       {
-        path : "/formulario-react-hook-form",
-        element: <FormulariosReactHookForm/>
+        path: "/formulario-react-hook-form",
+        element: <FormulariosReactHookForm />,
       },
+      {
+        path: "/formularios-final-forms",
+        element: <FormulariosFinalForm />,
+      },
+      
       {
         path: "/rutas/query-string",
-        element: <RutasQuery/>,
-        errorElement:<ErrorPersonalizado/>
+        element: <RutasQuery />,
+        errorElement: <ErrorPersonalizado />,
       },
 
       {
-        path : "*",
-        element:<Error404/>
-      }
-
-    
-
+        path: "*",
+        element: <Error404 />,
+      },
     ],
   },
 ]);

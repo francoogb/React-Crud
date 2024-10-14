@@ -33,31 +33,35 @@ const Header = () => {
           <nav className="nav nav-underline justify-content-between">
             <Link
               className="nav-item nav-link link-body-emphasis active"
-              to="/" title="Inicio"
+              to="/"
+              title="Inicio"
             >
               Inicio
             </Link>
 
             <Link
               className="nav-item nav-link link-body-emphasis "
-              to="hooks" title="Hooks"
+              to="hooks"
+              title="Hooks"
             >
               Hooks
             </Link>
-            <Link className="nav-item nav-link link-body-emphasis" to="/formularios" title="Formularios">
+            <Link
+              className="nav-item nav-link link-body-emphasis"
+              to="/formularios"
+              title="Formularios"
+            >
               Formularios{" "}
             </Link>
             <Link className="nav-item nav-link link-body-emphasis" to="/rutas">
               Rutas
             </Link>
+            <Link className="nav-item nav-link link-body-emphasis" to="/utilidades">
+              Utilidades
+            </Link> 
             <Link className="nav-item nav-link link-body-emphasis" to="/sty">
-            Styled components
+              Styled components
             </Link>
-            <a className="nav-item nav-link link-body-emphasis" href="#">
-            </a>
-            <a className="nav-item nav-link link-body-emphasis" href="#">
-              Business
-            </a>
           </nav>
         </div>
       </div>
