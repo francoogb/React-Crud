@@ -35,6 +35,10 @@ import FormulariosFormMix from "./paginas/FormulariosFormMix.jsx";
 import FormulariosReactHookForm from "./paginas/FormulariosReactHookForm.jsx";
 import FormulariosFinalForm from "./paginas/FormulariosFinalForm.jsx";
 import Utiles from "./paginas/Utiles.jsx";
+import UtilesDayjs from "./paginas/UtilesDayjs.jsx";
+import UtilesMoments from "./paginas/UtilesMoments.jsx";
+import UtilesSpinner from "./paginas/UtilesSpinner.jsx";
+import UtilidadesSweperList from "./paginas/UtilidadesSweperList.jsx";
 
 const router = createBrowserRouter([
   {
@@ -58,6 +62,22 @@ const router = createBrowserRouter([
       {
         path: "/utilidades",
         element: <Utiles />,
+      },
+      {
+        path: "/utilidades/dayJs/",
+        element: <UtilesDayjs />,
+      },
+      {
+        path: "/utilidades/MomentsJs/",
+        element: <UtilesMoments />,
+      },
+      {
+        path: "/utilidades/SpinnerJS/",
+        element: <UtilesSpinner />,
+      },
+      {
+        path: "/utilidades/SwipperList/",
+        element: <UtilidadesSweperList />,
       },
       {
         path: "/hooks",
@@ -134,6 +154,7 @@ const router = createBrowserRouter([
         path: "/formularios-final-forms",
         element: <FormulariosFinalForm />,
       },
+      
       
       {
         path: "/rutas/query-string",
