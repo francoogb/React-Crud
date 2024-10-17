@@ -284,6 +284,45 @@ const categorias = [
     }
   ];
   
+  const imagenes = [
+    { 
+      id: 1,
+      titulo: "Django",
+      imagen: "https://www.djangoproject.com/m/img/logos/django-logo-negative.svg"
+    },
+    {
+      id: 2,
+      titulo: "React",
+      imagen: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+    },
+    {
+      id: 3,
+      titulo: "Angular",
+      imagen: "https://angular.io/assets/images/logos/angular/angular.svg"
+    },
+    {
+      id: 4,
+      titulo: "Vue.js",
+      imagen: "https://vuejs.org/images/logo.png"
+    },
+   
+    {
+      id: 6,
+      titulo: "Node.js",
+      imagen: "https://nodejs.org/static/images/logo.svg"
+    },
+    {
+      id: 7,
+      titulo: "Laravel",
+      imagen: "https://laravel.com/img/logomark.min.svg"
+    },
+    {
+      id: 8,
+      titulo: "Flask",
+      imagen: "https://flask.palletsprojects.com/en/2.0.x/_static/flask-logo.png"
+    }
+  ];
+  
 
-  export { categorias, productos, paises, atributos, pais, ciudades };
+  export { categorias, productos, paises, atributos, pais, ciudades, imagenes };
   

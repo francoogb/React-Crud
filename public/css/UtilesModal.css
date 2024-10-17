@@ -1,0 +1,35 @@
+.modal-custom {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    border-radius: 15px; /* Bordes redondeados */
+  }
+  
+  .modal-header {
+    border-bottom: 2px solid #007bff; /* Línea inferior para el encabezado */
+  }
+  
+  .modal-body {
+    background-color: #f9f9f9; /* Fondo gris claro para el cuerpo del modal */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+  }
+  
+  h5 {
+    color: #333; /* Color del texto para mayor legibilidad */
+    font-weight: bold; /* Texto en negrita */
+  }
+  
+  .modal-footer {
+    border-top: 1px solid #ddd; /* Línea superior para el pie de modal */
+  }
+  
+  .btn-custom {
+    padding: 10px 20px; /* Espaciado del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Efecto de transición */
+  }
+  
+  .btn-custom:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el ratón */
+    color: #fff; /* Color del texto al pasar el ratón */
+  }
+  

@@ -39,6 +39,11 @@ import UtilesDayjs from "./paginas/UtilesDayjs.jsx";
 import UtilesMoments from "./paginas/UtilesMoments.jsx";
 import UtilesSpinner from "./paginas/UtilesSpinner.jsx";
 import UtilidadesSweperList from "./paginas/UtilidadesSweperList.jsx";
+import UtilesWebcam from "./paginas/UtilesWebcam.jsx";
+import ReactChartjs from "./paginas/ReactChartjs.jsx";
+import UtilesMapa from "./paginas/UtilesMapa.jsx";
+import UtilesModal from "./paginas/UtilesModal.jsx";
+import UtilesCarrusel from "./paginas/UtilesCarrusel.jsx";
 
 const router = createBrowserRouter([
   {
@@ -79,6 +84,28 @@ const router = createBrowserRouter([
         path: "/utilidades/SwipperList/",
         element: <UtilidadesSweperList />,
       },
+      {
+        path: "/utilidades/Webcam/",
+        element: <UtilesWebcam />,
+      },
+      {
+        path: "/utilidades/Graficos/",
+        element: <ReactChartjs />,
+      },
+      {
+        path: "/utilidades/Mapas/",
+        element: <UtilesMapa />,
+      },
+      {
+        path: "/utilidades/Modal/",
+        element: <UtilesModal />,
+      },
+      {
+        path: "/utilidades/Carousel/",
+        element: <UtilesCarrusel />,
+      },
+    
+    
       {
         path: "/hooks",
         element: <Hooks />,
