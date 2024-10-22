@@ -44,6 +44,13 @@ import ReactChartjs from "./paginas/ReactChartjs.jsx";
 import UtilesMapa from "./paginas/UtilesMapa.jsx";
 import UtilesModal from "./paginas/UtilesModal.jsx";
 import UtilesCarrusel from "./paginas/UtilesCarrusel.jsx";
+import Material from "./paginas/MatirualUI/Material.jsx";
+import MaterialButtons from "./paginas/MatirualUI/MaterialButtons.jsx";
+import MateriaList from "./paginas/MatirualUI/MateriaList.jsx";
+import MaterialDrawer from "./paginas/MatirualUI/MaterialDrawer.jsx";
+import MaterialTablas from "./paginas/MatirualUI/MaterialTablas.jsx";
+import MaterialAcordion from "./paginas/MatirualUI/MaterialAcordion.jsx";
+
 
 const router = createBrowserRouter([
   {
@@ -180,6 +187,30 @@ const router = createBrowserRouter([
       {
         path: "/formularios-final-forms",
         element: <FormulariosFinalForm />,
+      },
+      {
+        path: "/material",
+        element: <Material />,
+      },
+      {
+        path: "/material/buttons",
+        element: <MaterialButtons />,
+      },
+      {
+        path: "/material/list",
+        element: <MateriaList />,
+      },
+      {
+        path: "/material/drawer",
+        element: <MaterialDrawer />,
+      },
+      {
+        path: "/material/tablas",
+        element: <MaterialTablas />,
+      },
+      {
+        path: "/material/acordion",
+        element: <MaterialAcordion />,
       },
       
       

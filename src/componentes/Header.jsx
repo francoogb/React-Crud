@@ -58,8 +58,8 @@ const Header = () => {
             <Link className="nav-item nav-link link-body-emphasis" to="/utilidades">
               Utilidades
             </Link> 
-            <Link className="nav-item nav-link link-body-emphasis" to="/sty">
-              Styled components
+            <Link className="nav-item nav-link link-body-emphasis" to="/material">
+              Material UI
             </Link>
           </nav>
         </div>
