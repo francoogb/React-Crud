@@ -61,6 +61,8 @@ const Header = () => {
             <Link className="nav-item nav-link link-body-emphasis" to="/material">
               Material UI
             </Link>
+            <Link className="nav-item nav-link link-body-emphasis" to="/almacenamiento-local">
+              Almacenamiento Local            </Link>
           </nav>
         </div>
       </div>

@@ -50,6 +50,15 @@ import MateriaList from "./paginas/MatirualUI/MateriaList.jsx";
 import MaterialDrawer from "./paginas/MatirualUI/MaterialDrawer.jsx";
 import MaterialTablas from "./paginas/MatirualUI/MaterialTablas.jsx";
 import MaterialAcordion from "./paginas/MatirualUI/MaterialAcordion.jsx";
+import MaterialStepper from "./paginas/MatirualUI/MaterialStepper.jsx";
+import MaterialTabs from "./paginas/MatirualUI/MaterialTabs.jsx";
+import MaterialDialog from "./paginas/MatirualUI/MaterialDialog.jsx";
+import MaterialCards from "./paginas/MatirualUI/MaterialCards.jsx";
+import MaterialAutoComplete from "./paginas/MatirualUI/MaterialAutoComplete.jsx";
+import MaterialDate from "./paginas/MatirualUI/MaterialDate.jsx";
+import AlmacenamientoLocal from "./paginas/AlmacenamientoLocal/AlmacenamientoLocal.jsx";
+import LocalStorage from "./paginas/AlmacenamientoLocal/LocalStorage.jsx";
+import SesionStorage from "./paginas/AlmacenamientoLocal/SesionStorage.jsx";
 
 
 const router = createBrowserRouter([
@@ -212,8 +221,42 @@ const router = createBrowserRouter([
         path: "/material/acordion",
         element: <MaterialAcordion />,
       },
-      
-      
+      {
+        path: "/material/stepper",
+        element: <MaterialStepper />,
+      },
+      {
+        path: "/material/tabs",
+        element: <MaterialTabs />,
+      },
+      {
+        path: "/material/dialog",
+        element: <MaterialDialog />,
+      },
+      {
+        path: "/material/cards",
+        element: <MaterialCards />,
+      },
+      {
+        path: "/material/autocomplete",
+        element: <MaterialAutoComplete />,
+      },
+      {
+        path: "/material/date",
+        element: <MaterialDate />,
+      },
+      {
+        path: "/almacenamiento-local",
+        element: <AlmacenamientoLocal />,
+      },
+      {
+        path: "/almacenamiento-local/local-storage",
+        element: <LocalStorage />,
+      },
+      {
+        path: "/almacenamiento-local/secion-storage",
+        element: <SesionStorage />,
+      },
       {
         path: "/rutas/query-string",
         element: <RutasQuery />,
