@@ -55,14 +55,36 @@ const Header = () => {
             <Link className="nav-item nav-link link-body-emphasis" to="/rutas">
               Rutas
             </Link>
-            <Link className="nav-item nav-link link-body-emphasis" to="/utilidades">
+            <Link
+              className="nav-item nav-link link-body-emphasis"
+              to="/utilidades"
+            >
               Utilidades
-            </Link> 
-            <Link className="nav-item nav-link link-body-emphasis" to="/material">
+            </Link>
+            <Link
+              className="nav-item nav-link link-body-emphasis"
+              to="/material"
+            >
               Material UI
             </Link>
-            <Link className="nav-item nav-link link-body-emphasis" to="/almacenamiento-local">
-              Almacenamiento Local            </Link>
+            <Link
+              className="nav-item nav-link link-body-emphasis"
+              to="/almacenamiento-local"
+            >
+              Almacenamiento Local{" "}
+            </Link>
+            <Link
+              className="nav-item nav-link link-body-emphasis"
+              to="/context"
+            >
+              Context{" "}
+            </Link>
+            <Link
+              className="nav-item nav-link link-body-emphasis"
+              to="/redux"
+            >
+              Redux{" "}
+            </Link>
           </nav>
         </div>
       </div>

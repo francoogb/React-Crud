@@ -1,20 +1,20 @@
-import { Outlet } from "react-router-dom"
-import Header from "./Header"
-import Footer from "./Footer"
+import { Outlet } from "react-router-dom";
+import Header from "./Header";
+import Footer from "./Footer";
+import { EjemploProvider } from "../context/EjemploProvider";
 const Frontends = () => {
   return (
     <>
+      <EjemploProvider>
+        <Header />
 
-      <Header/>
-    
-      <main className="container">
-      
-      <Outlet />
-
-      </main>
-      <Footer/>
+        <main className="container">
+          <Outlet />
+        </main>
+        <Footer />
+      </EjemploProvider>
     </>
-  )
-}
+  );
+};
 
-export default Frontends
+export default Frontends;

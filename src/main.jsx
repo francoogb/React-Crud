@@ -1,6 +1,8 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "bootstrap/dist/css/bootstrap.min.css";
+import store from "./paginas/Redux/store/Store.jsx";
+import { Provider } from 'react-redux';
 import "./index.css";
 import "/public/css/blog.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom"; // Error corregido
@@ -59,7 +61,8 @@ import MaterialDate from "./paginas/MatirualUI/MaterialDate.jsx";
 import AlmacenamientoLocal from "./paginas/AlmacenamientoLocal/AlmacenamientoLocal.jsx";
 import LocalStorage from "./paginas/AlmacenamientoLocal/LocalStorage.jsx";
 import SesionStorage from "./paginas/AlmacenamientoLocal/SesionStorage.jsx";
-
+import ContextEjemplo from "./paginas/Context/ContextEjemplo.jsx";
+import EjemploRedux from "./paginas/Redux/EjemploRedux.jsx";
 
 const router = createBrowserRouter([
   {
@@ -258,6 +261,14 @@ const router = createBrowserRouter([
         element: <SesionStorage />,
       },
       {
+        path: "/context",
+        element: <ContextEjemplo />,
+      },
+      {
+        path: "/redux",
+        element: <EjemploRedux />,
+      },
+      {
         path: "/rutas/query-string",
         element: <RutasQuery />,
         errorElement: <ErrorPersonalizado />,
@@ -273,6 +284,9 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router}></RouterProvider>
+  <Provider store = {store}>
+  <RouterProvider router={router}></RouterProvider>
+
+  </Provider>
   </StrictMode>
 );
