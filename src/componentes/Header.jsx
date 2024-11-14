@@ -85,6 +85,18 @@ const Header = () => {
             >
               Redux{" "}
             </Link>
+            <Link
+              className="nav-item nav-link link-body-emphasis"
+              to="/axios"
+            >
+              Axios{" "}
+            </Link>
+            <Link
+              className="nav-item nav-link link-body-emphasis"
+              to="/fetch"
+            >
+              Fetch{" "}
+            </Link>
           </nav>
         </div>
       </div>

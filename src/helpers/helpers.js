@@ -15,6 +15,18 @@ export const formatearNumero = (numero) => {
 }
 
 // Helper para acortar texto
-export const acortarTexto = (valor, desde, hasta) => {
-    return valor.substring(desde, hasta);
-}
+export function acortarTexto(texto, maxLength) {
+    // Verificar si el texto es válido y es una cadena
+    if (typeof texto !== 'string') {
+      return '';  // Retorna una cadena vacía o un valor alternativo si no es un string
+    }
+  
+    // Si el texto es más corto que el máximo, devuelve el texto completo
+    if (texto.length <= maxLength) {
+      return texto;
+    }
+  
+    // Acortar el texto y agregar puntos suspensivos al final
+    return texto.substring(0, maxLength) + '...';
+  }
+  
